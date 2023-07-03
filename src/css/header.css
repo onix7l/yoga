@@ -1,21 +1,125 @@
 .header {
-  padding: 20px 0;
 }
 
-.nav-list {
+@media screen and (max-width: 1199px) {
+  .header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.header-container {
   display: flex;
+  /* justify-content: space-between; */
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
 }
 
-.nav-link {
+.header-logo {
+  font-size: 20px;
+  font-family: var(--secondary-font);
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  background-image: var(--color-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.header-menu-btn {
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+
+.header-icon {
+  fill: var(--color-dark-title-color);
+}
+
+.header-nav-list {
+  display: none;
+}
+
+.mobile-menu {
+  padding: 72px 48px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(26, 26, 26, 0.3);
+  backdrop-filter: blur(16px);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.header-close-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 24px;
+  top: 16px;
+}
+
+.header-close-icon {
+}
+
+.header-mob-nav {
+}
+
+.header-mob-list {
+}
+
+.header-mob-item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.header-mob-link {
+  color: var(--dark-title-color);
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+}
+
+.current {
+  background-image: var(--color-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    margin-left: auto;
+  }
+
+  .header-nav-list {
+    display: flex;
+    gap: 72px;
+  }
+
+  .header-nav-item {
+  }
+
+  .header-nav-link {
+    color: var(--dark-title-color);
+    font-size: 16px;
+    font-weight: 500;
+    display: block;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    background-image: var(--color-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

@@ -1,13 +1,53 @@
 <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <div class="container header-container">
+    <a href="./index.html" class="header-logo">Yoga</a>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <button type="button" class="header-menu-btn js-open-menu">
+      <svg class="header-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-mobile-menu"></use>
+      </svg>
+    </button>
+
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="">Home</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="">Health</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="">Routine</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="">Follow</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="mobile-menu js-menu-container">
+    <button type="button" class="header-close-btn js-close-menu">
+      <svg class="header-close-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <nav class="header-mob-nav">
+      <ul class="header-mob-list">
+        <li class="header-mob-item">
+          <a class="header-mob-link current" href="">Home</a>
+        </li>
+        <li class="header-mob-item">
+          <a class="header-mob-link" href="">Health</a>
+        </li>
+        <li class="header-mob-item">
+          <a class="header-mob-link" href="">Routine</a>
+        </li>
+        <li class="header-mob-item">
+          <a class="header-mob-link" href="">Follow</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
