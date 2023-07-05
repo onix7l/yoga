@@ -1,0 +1,116 @@
+:root {
+  --color-gradient-color: linear-gradient(to bottom, #ff52af 0%, #9f53ff 100%);
+  --color-first-color-light: #e5d9fd;
+  --color-first-color-dark: #1e0849;
+  --color-title-color: #220953;
+  --color-text-color: #4b3e65;
+  --color-text-color-light: #a197b4;
+  --color-white-color: #ffffff;
+  --color-body-color: #f5f0ff;
+  --color-container-color: #ffffff;
+  --color-dark-title-color: #d1c0f1;
+  --color-dark-text-color: #a094b8;
+  --color-dark-body-color: #14092a;
+  --color-dark-container-color: #372a51;
+  --color-g-1: linear-gradient(to bottom, #fd6767 0%, #b900c9 100%);
+  --main-font: 'Poppins', sans-serif;
+  --secondary-font: 'Lora', serif;
+}
+
+.routine {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.container {
+}
+
+.routine-container {
+  position: relative;
+}
+
+.routine-title {
+  color: var(--color-dark-title-color);
+  text-align: center;
+  font-size: 32px;
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.routine-desc {
+  color: var(--color-dark-text-color);
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.routine-btn {
+  min-width: 206px;
+  height: 56px;
+  color: var(--color-white-color);
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 64px;
+  background: var(
+    --gradient-color,
+    linear-gradient(10deg, #ff52af 0%, #9f53ff 100%)
+  );
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  gap: 4px;
+}
+
+.hero-icon {
+}
+
+.routine-img-first {
+}
+
+.routine-label {
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: var(--color-dark-container-color);
+  min-width: 169px;
+  height: 48px;
+}
+
+.routine-label-first {
+  position: absolute;
+  top: 290px;
+  right: 16px;
+}
+
+.routine-label-second {
+  position: absolute;
+  bottom: -57px;
+  left: 16px;
+}
+
+.routine-label-icon {
+}
+
+.routine-label-text {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  background-image: var(--color-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.routine-img-second {
+  position: absolute;
+  top: 368px;
+  right: 14px;
+  z-index: -1;
+}
